@@ -12,7 +12,7 @@ Nb. Door *open* toe te voegen aan een *details* element kun je deze standaard op
 ## Jij
 
 ### Ontwerper:
-Wessel Glansbeek
+Sanne 't Hooft (vervangen door jouw naam)
 
 #### Je startniveau:
 Mijn startniveau is: hier je startniveau (kies uit zwart, rood óf blauw)
@@ -31,9 +31,9 @@ Mijn startniveau is: hier je startniveau (kies uit zwart, rood óf blauw)
 
   ### Je ambitie: 
   Aan deze technieken/punten wil ik werken:
-  - Ik wil leren interactief te coderen met css en javascript
-  - Ik wil meer plezier hebben met code.
-  - Ik wil mijn css skills verbeteren, met name positioneren.
+  - punt 1
+  - punt 2
+  - nog een punt
   - ...
  
 </details>
@@ -47,41 +47,23 @@ Mijn startniveau is: hier je startniveau (kies uit zwart, rood óf blauw)
   <summary>Mijn bevindingen + wijzigingen (minimaal 5)</summary>
 
   ### Bevinding 1:
-  Nog meer progressive disclosure toepassen.
+  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
 
   #### oplossing:
-  Per console de interface en controller toepassen van het desbetreffende systeem.
+  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
 
 
 
   ### Bevinding 2:
-  Uitlijning tekst kan beter.
+  Omschrijving van wat er nog niet orde was (tekst en afbeeding(en)).
 
   #### oplossing:
-  Meer verdiepen in de posities van teksten in de Playstation interface.
+  Beschrijving hoe je het hebt hebt opgelost of als het niet gelukt is hoe je het zou oplossen (tekst en afbeeding(en)).
 
 
 
   ### Bevinding 3:
-  Per interface meer buttons, chips, input.
-  
-  #### oplossing:
-  Per console verdiepen in de buttons, chips, input.
-  
-  
-  ### Bevinding 4:
-  Naam bezoeker bovenin ipv player 1.
-  
-  #### oplossing:
-  Input prompt toevoegen.
-  
-  
-  ### Bevinding 5:
-  Meer gevarieerde statistieken, informatie.
-  
-  #### oplossing:
-  Meest verkochte games, prijs console etc. 
-
+  ...
 
 </details>
 
