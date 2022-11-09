@@ -3,19 +3,24 @@
 /*************/
 
 /* naar een idee van Jen Simmons */
-*, *::after, *::before {
-  box-sizing:border-box;  
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 
 body {
-  margin:0;
-  background-color:#0549B6;
+  margin: 0;
+  background-color: #0549B6;
   font-family: 'SST', sans-serif;
-  font-weight: 300;                                           
+  font-weight: 300;
+  overflow: hidden;
 }
 
+
+
 button:not([disabled]) {
-  cursor:pointer;
+  cursor: pointer;
 }
 
 
@@ -27,7 +32,7 @@ button:not([disabled]) {
 /*********************/
 
 :root {
-  --color-headings:white;
+  --color-headings: white;
 }
 
 
@@ -38,23 +43,26 @@ button:not([disabled]) {
 /* ALGEMENE STYLING */
 /********************/
 
-header ul{
-  margin:0;
-	padding:0;
-	list-style:none;
-	display: flex;
-	justify-content: space-between;
+/* Styling van de drie elementen bovenaan */
+
+header ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
   align-items: center;
-	height:30%;
+  height: 30%;
 }
 
+/* Styling van de gebruikersnaam */
 
 header ul li a {
-  color:var(--color-headings);
+  color: var(--color-headings);
   display: flex;
   align-items: center;
   text-decoration: none;
-  font-size: 16px;
+  font-size: 1em;
 
 }
 
@@ -63,27 +71,29 @@ header img {
   margin-right: 1em;
 }
 
+/* Styling van de tekst en koppen */
+
 h1 {
-  color:var(--color-headings);
-  font-size: 16px;
+  color: var(--color-headings);
+  font-size: 1em;
   margin: 1em;
   font-family: 'SST', sans-serif;
-  font-weight: 300; 
-  
+  font-weight: 300;
+
 }
 
 h2 {
-  color:var(--color-headings);
-  font-size: 25px;
+  color: var(--color-headings);
+  font-size: 1.5em;
   margin-left: .6em;
   font-family: 'SST', sans-serif;
   font-weight: 700;
-} 
+}
 
-h3 {
-  color:var(--color-headings);
+h4 {
+  color: var(--color-headings);
   font-weight: 300;
-  font-size: 16px;
+  font-size: 1em;
   margin-left: .1em;
 }
 
@@ -91,63 +101,228 @@ p {
   margin: 1em;
 }
 
+/* De 5 PlayStations met hulp van Sanne en Jeffrey */
 
 main ol {
-	margin: 0;
-	padding: 1em;
-	list-style:none;
-	
-  /* een goed plan */
-	display:flex;
+  margin: 0;
+  padding: 1em;
+  list-style: none;
+  display: flex;
   gap: 1em;
   align-items: center;
 }
 
-main li {
-  display:grid;
-	place-items:center;
-/* ook een goed plan */
-	
-	flex-basis:0%;
-  flex-grow:4;
-	transition: .75s;
 
+
+main ol li {
+  display: grid;
+  place-items: center;
+  flex-basis: 0%;
+  flex-grow: 4;
+  transition: .75s;
   aspect-ratio: 1/1;
-
   border-style: solid;
-  border-color:#ffffff;
+  border-color: #ffffff;
   padding: 1em;
   position: relative;
 }
 
-main li:hover {
+main ol li:hover {
   flex-grow: 5;
   background-color: #02245b;
   opacity: 1;
 }
 
+main ol li:active {
+  flex-grow: 4;
+}
+
+/* Tekst over Playstations die pas zichtbaar is als je eroverheen hovert */
+
 main ol li:hover h2 {
   visibility: visible;
 }
 
-main li h2 {
-  color:var(--color-headings);
+main ol li h2 {
+  color: var(--color-headings);
   opacity: 1;
   position: absolute;
   filter: drop-shadow(0 0 .1em black);
   visibility: hidden;
 }
 
-main a {
+/* De styling van buttons en afbeeldingen Playstations */
+
+main ol button {
   display: flex;
   justify-content: center;
+  background: none;
+  border: none;
 }
 
-main img {
+main ol img {
   width: 75%;
   height: auto;
 }
 
+/* Styling en positionering van de koppen details playstattion */
+
+main ul {
+  height: 30vh;
+  list-style: none;
+  margin-top: 0em;
+  margin-bottom: 1em;
+  margin-left: 1em;
+  margin-right: 0em;
+  padding: 0;
+  gap: 2em;
+  display: grid;
+  grid-template-columns: 4fr 1fr 1fr;
+  transform: translateY(+175vh);
+}
 
 
+main ul li {
+  list-style: none;
+  margin: 0;
+}
 
+/* Styling van p met info van playstations */
+
+main ul li p {
+  background-color: #77B1DF;
+  font-family: 'SST', sans-serif;
+  font-weight: 300;
+  padding: 1em;
+  line-height: 1.75em;
+  height: 100%;
+  width: auto;
+  margin: 0em;
+  font-size: .8em;
+}
+
+/* Styling van afbeeldingen controller en game */
+
+main ul li img {
+  width: auto;
+  height: 30vh;
+  display: flex;
+  justify-content: center;
+  aspect-ratio: 1/1;
+}
+
+/* Styling van de 2 sections met translate om te verstoppen */
+
+section:nth-of-type(2) {
+  display: grid;
+  grid-template-columns: 4fr 1fr 1fr;
+  margin-left: 1em;
+  transform: translateY(+175vh);
+}
+
+
+section:nth-of-type(1) {
+  display: grid;
+  justify-items: center;
+  transform: translateY(+175vh);
+}
+
+/* Styling koppen in sections */
+
+section h3 {
+  color: var(--color-headings);
+  font-weight: 700;
+  font-size: 1em;
+}
+
+section h3:nth-of-type(2) {
+  margin-left: 1em;
+}
+
+section h3:nth-of-type(3) {
+  margin-left: .75em;
+}
+
+/* Styling button pijl terug */
+
+section img {
+  height: 1.5em;
+  margin-bottom: 2em;
+}
+
+section button {
+  background: none;
+  border: none;
+}
+
+/********************/
+/* Classlists die worden toegevoegd in JS */
+/********************/
+
+/* Achtergronden */
+
+.ps5achtergrond {
+  background-image: url("https://i.ytimg.com/vi/bMxgJbCgPQQ/maxresdefault.jpg");
+  background-size: cover;
+}
+
+.ps4achtergrond {
+  background-image: url("https://www.destructoid.com/wp-content/uploads/2020/12/380651-PS4Header.jpg");
+}
+
+.ps3achtergrond {
+  background-image: url("https://wallpaperset.com/w/full/2/a/d/73251.jpg");
+  background-size: cover;
+}
+
+.ps2achtergrond {
+  background-image: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/ad831306-7bcd-4f15-ba7c-b823fe10c8cc/d6ix25s-e966662f-e622-4481-9981-b813f33d163a.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2FkODMxMzA2LTdiY2QtNGYxNS1iYTdjLWI4MjNmZTEwYzhjY1wvZDZpeDI1cy1lOTY2NjYyZi1lNjIyLTQ0ODEtOTk4MS1iODEzZjMzZDE2M2EuanBnIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.NZGdTeTn13oCH2nZj7sTr7lB15tr6n4nkoDFC6uVkPU");
+  background-size: cover;
+}
+
+.ps1achtergrond {
+  background-image: url("https://drew1440.files.wordpress.com/2021/08/playstation-scph1001-menu.png?w=624");
+  background-size: cover;
+}
+
+/* Transforms met transitions om interactie menu te creeren */
+
+main ol.geselecteerd {
+  transform: translateY(-200vh);
+  transition: 1s;
+}
+
+main ol.terug {
+  transform: translateY(0vh);
+  transition: 1s;
+}
+
+main ul.geselecteerd {
+  transform: translateY(-35vh);
+  transition: 1s;
+}
+
+main ul.terug {
+  transform: translateY(+175vh);
+  transition: 1s;
+}
+
+section:nth-of-type(2).geselecteerd {
+  transform: translateY(-35vh);
+  transition: 1s;
+}
+
+section:nth-of-type(2).terug {
+  transform: translateY(+175vh);
+  transition: 1s;
+}
+
+section:nth-of-type(1).geselecteerd {
+  transform: translateY(-35vh);
+  transition: 1s;
+}
+
+section:nth-of-type(1).terug {
+  transform: translateY(+175vh);
+  transition: 1s;
+}

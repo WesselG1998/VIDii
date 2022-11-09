@@ -1,33 +1,35 @@
 <!doctype html>
 <html lang="nl">
-	
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="author" content="Wessel Glansbeek">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	
+
 	<title>VIDii 2022/23 - Tijdlijn</title>
-	
+	<!-- links met icon in tabblad en font  -->
 	<link href="styles/style.css" rel="stylesheet">
 	<link rel="icon" type="image/svg+xml" href="images/pslogo.png">
 	<link href="https://fonts.cdnfonts.com/css/sst" rel="stylesheet">
-    <style>
+	<style>
 		@import url('https://fonts.cdnfonts.com/css/sst');
-</style>
-		
+	</style>
+
 </head>
 
 <body>
-
+	<!-- In de header zit een unordered list met de aantal verkochte exemplaren, gebruikersnaam en jaartal  -->
 	<header>
 		<ul>
 			<li>
 				<h1>Aantal exemplaren verkocht</h1>
 			</li>
 			<li>
-				<a href=""><img src="images/avatar.png" alt="Avatar gebruiker"><h3>Player 1</h3></a>
+				<a href=""><img src="images/avatar.png" alt="Avatar gebruiker">
+					<h4>Player 1</h4>
+				</a>
 			</li>
-			
+
 			<li>
 				<h1>Jaartal</h1>
 			</li>
@@ -35,48 +37,64 @@
 	</header>
 
 	<main>
-		<!-- de tijdlijn zelf is een ordered list -->
+		<!-- de tijdlijn met de 5 playstations -->
+		<!-- Ordered list (want tijdlijn) met buttons en images  -->
 
-		<!-- elk list-item is een punt in tijd -->
-		<!-- 11 list-items om te starten -->
-		<!-- bepaal zelf hoeveel je er nodig hebt -->
-		
-		<!-- in elk listitem staat nu een link -->
-		<!-- de link kun je vullen met jouw content -->
-		<!-- of in zijn geheel vervangen door jouw content -->
+
 		<h2>De PlayStation door de jaren heen</h2>
-	
+
 
 		<ol>
 			<li>
-				<a href="images/ps5.png"><img src="images/ps5.png" alt="Playstation 5"></a>
+				<button><img src="images/ps5.png" alt="Playstation 5"></button>
 				<h2>PlayStation 5</h2>
 			</li>
 			<li>
-				<a href="images/ps4.jpg"><img src="images/ps4.png" alt="Playstation 4"></a>
+				<button><img src="images/ps4.png" alt="Playstation 4"></button>
 				<h2>PlayStation 4</h2>
 			</li>
 			<li>
-				<a href="images/ps3.png"><img src="images/ps3.png" alt="Playstation 3"></a>
+				<button><img src="images/ps3.png" alt="Playstation 3"></button>
 				<h2>PlayStation 3</h2>
 			</li>
 			<li>
-				<a href="images/ps2.png"><img src="images/ps2.png" alt="Playstation 2"></a>
+				<button><img src="images/ps2.png" alt="Playstation 2"></button>
 				<h2>PlayStation 2</h2>
 			</li>
 			<li>
-				<a href="images/ps1.png"><img src="images/ps1.png" alt="Playstation 1"></a>
+				<button><img src="images/ps1.png" alt="Playstation 1"></button>
 				<h2>PlayStation 1</h2>
 			</li>
 		</ol>
-	</main>
-<footer>
-	<article>
-		<p></p>
-	</article>
-</footer>
+		<!-- section met button pijl terug  -->
+		<section><button><img src="images/down-arrow.png" alt="Pijl omhoog"></button></section>
+		<!-- section met koppen details playstations  -->
+		<section>
+			<h3>Specificaties Playstation 5</h3>
+			<h3>DualShock 5 controller</h3>
+			<h3>Meest gespeelde game</h3>
+		</section>
+		<!-- unordered list met p met daarin specificaties, image controller en image game  -->
+		<ul>
+			<li>
+				<p>Met de kracht van een aangepaste CPU, GPU en SSD met geïntegreerd I/O-systeem verlegt deze
+					PlayStation-consoles de grenzen van wat mogelijk is.
+					Geniet van ongelooflijke graphics en ervaar nieuwe PS5-functies. Ontdek een diepere game-ervaring
+					met ondersteuning voor haptische feedback, adaptieve triggers en 3D-audiotechnologie.
 
+					Met Ray tracing ga je helemaal op in werelden die realistischer zijn dan ooit. Lichtstralen worden
+					individueel gesimuleerd, waardoor levensechte schaduwen en reflecties worden gecreëerd in
+					ondersteunde PS5™-games. Geniet van vloeiende gameplay met een hoge framerate tot 120 fps voor
+					compatibele games, met ondersteuning voor 120 Hz op 4K-schermen.
+					PS5 digitale editie is een PS5-console voor uitsluitend digitale games. Het apparaat heeft dus geen
+					disc-speler. Uiteraard kun je via de PlayStation®Store met onder andere PlayStation tegoedkaarten
+					games te kopen, downloaden en spelen.</p>
+			</li>
+			<li><img src="images/ps5_controller.png" alt="Playstation 5 controller"></li>
+			<li><img src="images/fortnite.jpeg" alt="Fortnite"> </li>
+		</ul>
+	</main>
 	<script src="scripts/script.js"></script>
 </body>
-	
+
 </html>
